@@ -1,71 +1,42 @@
 let numero = 0
+let set = 0
+let number = 0
+let sent = 0
 
-//Função zerar tudo
 function zerar() {
     numero = 0
+    number = 0
     MostrarNaTela()
     MostrarnaTela()
 }
 
 function zero() {
-    numero = 0
+    set = 0
+    sent = 0
     ShowOnScreen()
     ShowonScreen()
 }
 
-//Funções placar Eles
-function um() {
-    numero = numero + 1
+function placar (ponto) {
+    number = number + ponto
     MostrarNaTela()
+    if (number => 12) {
+        placar = 0
+        sent = sent + 1
+        ShowOnScreen()
+    }
 }
 
-function três() {
-    numero = numero + 3
-    MostrarNaTela()
-}
-
-function seis() {
-    numero = numero + 6
-    MostrarNaTela()
-}
-
-function nove() {
-    numero = numero + 9
-    MostrarNaTela()
-}
-
-function doze() {
-    numero = numero + 12
-    MostrarNaTela()
-}
-
-//Funções placar Nós
-function pontuaçãoum() {
-    numero = numero + 1
+function pontuação (ponto){
+    numero = numero + ponto
     MostrarnaTela()
+    if (numero => 12) {
+        pontuação = 0
+        set = set + 1
+        ShowonScreen()
+    }
 }
 
-function pontuaçãotrês() {
-    numero = numero + 3
-    MostrarnaTela()
-}
-
-function pontuaçãoseis() {
-    numero = numero + 6
-    MostrarnaTela()
-}
-
-function pontuaçãonove() {
-    numero = numero + 9
-    MostrarnaTela()
-}
-
-function pontuaçãodoze() {
-    numero = numero + 12
-    MostrarnaTela()
-}
-
-//Funções pra mostrar o resultado
 function MostrarNaTela() {
     const p = document.querySelector(".resultado")
     p.innerText = numero
@@ -73,38 +44,36 @@ function MostrarNaTela() {
 
 function MostrarnaTela() {
     const p = document.querySelector(".result")
-    p.innerText = numero
+    p.innerText = number
 }
 
 function ShowOnScreen() {
     const p = document.querySelector(".final")
-    p.innerText = numero
+    p.innerText = sent
 }
 
 function ShowonScreen() {
     const p = document.querySelector(".fon")
-    p.innerText = numero
+    p.innerText = set
 }
 
-//Função Set Nós
 function adiciona() {
     numero = numero + 1
     ShowOnScreen()
 }
 
-function diminui () {
+function diminui() {
     numero = numero - 1
     ShowOnScreen()
 }
 
-//Função Set Eles
-function mais() {
-    numero = numero + 1
+function add() {
+    number = number + 1
     ShowonScreen()
 }
 
-function menos() {
-    numero = numero - 1
+function less() {
+    number = number - 1
     ShowonScreen()
 }
 
