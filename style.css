@@ -2,3 +2,6 @@ body {
     box-sizing: border-box;
     background-color: rgb(51, 51, 51);
 }
+p {
+    color: blanchedalmond;
+}

@@ -8,43 +8,68 @@
 </head>
 <body>
     <h1>BOA PARTIDA! QUE VENÇA O MELHOR!</h1>
+        <div class="pontuação"> 
+            <h2>Pontuação</h2>
+            <div class="gerale">
+                <div>
+                    <p>Dupla 1:</p>
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                    <div class="placar">
+                        <p class="result">0</p>
+                    </div>
+                    <div class="button">
+                        <button onclick="pontuaçãoum(1)">+1</button>
+                        <button onclick="pontuaçãotrês(3)">Truco</button>
+                        <button onclick="pontuaçãoseis(6)">6</button>
+                        <button onclick="pontuaçãonove(9)">9</button>
+                        <button onclick="pontuaçãodoze(12)">12</button>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="zero">
+            <button onclick="zerar()">Zerar</button>
+        </div>
+        
+            <div class="gerale">
+                <p>Dupla 2:</p>
+                <div class="input">
+                    <input type="text">
+                </div>
+                <div class="placar">
+                    <p class="resultado"></p>
+                </div>
+                <div class="button">
+                    <button onclick="um()">+1</button>
+                    <button onclick="três()">Truco</button>
+                    <button onclick="seis()">6</button>
+                    <button onclick="nove()">9</button>
+                    <button onclick="doze()">12</button>
+                </div>
+            </div>
+        </div>
+        <div class="set">
+            <h2>Contagem de Set's</h2>
+            <p>Dupla 1:</p>
+            <p class="final"></p>
+            <div class="button">
+                <button onclick="adiciona()">+1</button>
+                <button onclick="diminui()">-1</button>
+            </div>
+            <div class="zero">
+                <button onclick="zero()">Zerar</button>
+            </div>
+            <p>Dupla 2:</p>
+            <p class="fon"></p>
+            <div class="button">
+                <button onclick="mais()">+1</button>
+                <button onclick="menos()">-1</button>
+            </div>
+        </div>
 
-    <div class="input">
-        <input type="text">
-    </div>
-    <div class="geral">
-        <div>
-            <div class="placar">
-                <p class="result"></p>
-            </div>
-            <div class="button">
-                <button onclick="uma()">+1</button>
-                <button onclick="trás()">Truco</button>
-                <button onclick="seisa()">6</button>
-                <button onclick="nova()">9</button>
-                <button onclick="doza()">12</button>
-                <button onclick="zerou()">Zerar</button>
-            </div>
-        </div>
-    </div>
-    <div class="input">
-        <input type="text">
-    </div>
-    <div>
-        <div class="geral">
-            <div class="placar">
-                <p class="resultado"></p>
-            </div>
-            <div class="button">
-                <button onclick="um()">+1</button>
-                <button onclick="três()">Truco</button>
-                <button onclick="seis()">6</button>
-                <button onclick="nove()">9</button>
-                <button onclick="doze()">12</button>
-                <button onclick="zerar()">Zerar</button>
-            </div>
-        </div>
-    </div>
     <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>
