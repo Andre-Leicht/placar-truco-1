@@ -8,40 +8,46 @@
 </head>
 <body>
     <h1>BOA PARTIDA! QUE VENÇA O MELHOR!</h1>
-        <div class="pontuação"> 
+        <div> 
             <h2>Pontuação</h2>
-            <div class="gerale">
-                <div>
+
+                <div class="placar-1">
                     <p>Time 1:</p>
+
                     <div class="input">
                         <input type="text">
                     </div>
-                    <div class="placar">
+
+                    <div>
                         <p class="result">0</p>
                     </div>
-                    <div class="button">
+
+                    <div>
                         <button onclick="pontuação(1)">+1</button>
                         <button onclick="pontuação(3)">Truco</button>
                         <button onclick="pontuação(6)">6</button>
                         <button onclick="pontuação(9)">9</button>
                         <button onclick="pontuação(12)">12</button>
                     </div>
+
                 </div>
-            </div>
         
-        <div class="zero">
+        <div>
             <button onclick="zerar()">Zerar</button>
         </div>
         
-            <div class="gerale">
+            <div class="placar-2">
                 <p>Time 2:</p>
+
                 <div class="input">
                     <input type="text">
                 </div>
-                <div class="placar">
+                
+                <div>
                     <p class="resultado"></p>
                 </div> 
-                <div class="button">
+
+                <div>
                     <button onclick="placar(1)">+1</button>
                     <button onclick="placar(3)">Truco</button>
                     <button onclick="placar(6)">6</button>
@@ -50,13 +56,16 @@
                 </div>
             </div>
         </div>
-        <div class="set">
+
+        <div>
             <h2>Contagem de Set's</h2>
             <p>Time 1:</p>
             <p class="final"></p>
-            <div class="zero">
+
+            <div>
                 <button onclick="zero()">Zerar</button>
             </div>
+
             <p>Time 2:</p>
             <p class="fon"></p>
         </div>
