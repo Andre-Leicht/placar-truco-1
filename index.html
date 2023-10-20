@@ -10,49 +10,51 @@
     <h1>BOA PARTIDA! QUE VENÇA O MELHOR!</h1>
         <div> 
             <h2>Pontuação</h2>
+            <div class="pontos">
+                
+                    <div class="placar-1">
+                        <p>Time 1:</p>
+                        
+                        <div class="input">
+                            <input type="text">
+                        </div>
 
-                <div class="placar-1">
-                    <p>Time 1:</p>
+                        <div>
+                            <p class="result">0</p>
+                        </div>
 
-                    <div class="input">
-                        <input type="text">
+                        <div>
+                            <button onclick="pontuação(1)">+1</button>
+                            <button onclick="pontuação(3)">Truco</button>
+                            <button onclick="pontuação(6)">6</button>
+                            <button onclick="pontuação(9)">9</button>
+                            <button onclick="pontuação(12)">12</button>
+                        </div>
+                        
                     </div>
-
+                    
                     <div>
-                        <p class="result">0</p>
+                        <button onclick="zerar()">Zerar</button>
                     </div>
-
-                    <div>
-                        <button onclick="pontuação(1)">+1</button>
-                        <button onclick="pontuação(3)">Truco</button>
-                        <button onclick="pontuação(6)">6</button>
-                        <button onclick="pontuação(9)">9</button>
-                        <button onclick="pontuação(12)">12</button>
-                    </div>
-
-                </div>
-        
-        <div>
-            <button onclick="zerar()">Zerar</button>
-        </div>
-        
-            <div class="placar-2">
-                <p>Time 2:</p>
-
+                    
+                <div class="placar-2">
+                        <p>Time 2:</p>
+                        
                 <div class="input">
                     <input type="text">
                 </div>
-                
-                <div>
-                    <p class="resultado"></p>
-                </div> 
+                    
+                    <div>
+                        <p class="resultado"></p>
+                    </div> 
 
-                <div>
-                    <button onclick="placar(1)">+1</button>
-                    <button onclick="placar(3)">Truco</button>
-                    <button onclick="placar(6)">6</button>
-                    <button onclick="placar(9)">9</button>
-                    <button onclick="placar(12)">12</button>
+                    <div>
+                        <button onclick="placar(1)">+1</button>
+                        <button onclick="placar(3)">Truco</button>
+                        <button onclick="placar(6)">6</button>
+                        <button onclick="placar(9)">9</button>
+                        <button onclick="placar(12)">12</button>
+                    </div>
                 </div>
             </div>
         </div>
